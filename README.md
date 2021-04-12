@@ -77,7 +77,7 @@
 
 ## MWE
 
-[MWE](https://en.wikipedia.org/wiki/Minimal_working_example) - наиболее простая программа минимального размера, демонстрирующая какую-либо ошибку. В рамках данного исследования подготовлено 2 версии такой программы: первая для джампера **J13** в положении **"VCC"** (ветка J13_VCC), вторая для джампера **J13** в положении "GND" (ветка J13_GND). 
+[MWE](https://en.wikipedia.org/wiki/Minimal_working_example) - наиболее простая программа минимального размера, демонстрирующая какую-либо ошибку. В рамках данного исследования подготовлено 2 версии такой программы: первая для джампера **J13** в положении **"VCC"** (ветка [J13_VCC](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior)), вторая для джампера **J13** в положении "GND" (ветка [J13_GND](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior/tree/J13_GND)). 
 
 ## План исследования
 
