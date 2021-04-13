@@ -18,29 +18,26 @@
 
 2. При нажатии на кнопку **PD2**, соотв. вектору прерывания **INT0** светодиоды для **PA3-PA7** должны погаснуть.
    
-	#define F_CPU 1000000
-	#include <avr/io.h>
-    #include <util/delay.h>
-    #include <avr/interrupt.h>
+        #define F_CPU 1000000
+        #include <avr/io.h>
+        #include <util/delay.h>
+        #include <avr/interrupt.h>
        
-    ISR(INT0_vect) {
-       
-    	/* Гасим светодиоды для порта А */
-        PORTA=0x00;
-    }
-       
-    int main(void)
-    {
-       
-    	НАСТРОЙКА_ПОРТОВ_ВВОДА_ВЫВОДА;
-        /* Зажигаем светодиоды для порта A */
-        PORTA=0xF0;
-        НАСТРОЙКА_ПРЕРЫВАНИЙ;
-        while (1) 
-        {
+        ISR(INT0_vect) {
+               /* Гасим светодиоды для порта А */
+            PORTA=0x00;
         }
        
-     }
+        int main(void)
+        {
+               НАСТРОЙКА_ПОРТОВ_ВВОДА_ВЫВОДА;
+            /* Зажигаем светодиоды для порта A */
+            PORTA=0xF0;
+            НАСТРОЙКА_ПРЕРЫВАНИЙ;
+            while (1) 
+            {
+            }
+         }
 
 ## Cуть странного поведения:
 
