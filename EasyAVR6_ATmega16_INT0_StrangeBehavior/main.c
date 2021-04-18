@@ -1,4 +1,4 @@
-/* (C) 2021 by Alexander Chernokrylov <CodeDesign2763@gmail.com>
+/* (C) 2021 by Alexander Chernokrylov <codedesign2763@gmail.com>
  *
  * This program is free software;
  * you can redistribute it and/or modify
@@ -86,8 +86,8 @@ int main(void)
 	GICR |= (1 << INT1) | (1 << INT0);
 	
 	/* Срабатывание INT0 по спаду импульса */
-	MCUCR |= (1 << ISC11) | (0 << ISC10);
-		
+	MCUCR |= (1 << ISC01) | (0 << ISC00);
+	 		
 	/* Глобальное разрешение прерываний в SREG */
 	sei();
 	
