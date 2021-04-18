@@ -92,7 +92,9 @@ int main(void)
 
 ## MWE
 
-[MWE](https://en.wikipedia.org/wiki/Minimal_working_example) - наиболее простая программа минимального размера, демонстрирующая какую-либо ошибку. В рамках данного исследования подготовлено 3 версии такой программы: ветка [J13_VCC](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior), ветка [J13_GND](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior/tree/J13_GND), ветка [Floating_PB2_PB3](https:////github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior/tree/Floating_PB2_PB3). Наиболее близкой к оригинальному коду, вызывавшему странное поведение, является 3-я версия. Версия №2 предназначена для случая, когда джампер **J13** находится в положении **GND**.
+[MWE](https://en.wikipedia.org/wiki/Minimal_working_example) - наиболее простая программа минимального размера, демонстрирующая какую-либо ошибку. В рамках данного исследования подготовлено 3 версии такой программы: ветка [J13_VCC](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior), ветка [J13_GND](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior/tree/J13_GND), ветка [Floating_PD2_PD3](https:////github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior/tree/Floating_PD2_PD3). 
+
+Наиболее близкой к оригинальному коду, вызывавшему странное поведение, является версия №3 (ветка **Floating_PD2_PD3**). Файл [main.c](https://github.com/CodeDesign2763/EasyAVR_ATmega16_INT0_StrangeBehavior/blob/Floating_PD2_PD3/EasyAVR6_ATmega16_INT0_StrangeBehavior/main.c). Версия №2 предназначена для случая, когда джампер **J13** находится в положении **GND**.
 
 ## Исследование неопределенного поведения.
 
